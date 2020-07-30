@@ -4,7 +4,7 @@ import './Banner.css'
 const Banner = () => {
     return(
         <div className="mainBanner">
-            <p> Your Data is More than safe with us</p>
+            <p> Your Data is safe with us</p>
         </div>
     )
 

@@ -5,7 +5,8 @@ class Form extends Component {
         super()
         this.state = {
             teamName: "",
-            whatsappNumber: ""
+            whatsappNumber: "",
+            required : true,
         }
         this.handleChange = this.handleChange.bind(this)
     }
@@ -24,7 +25,8 @@ class Form extends Component {
                     type="text" 
                     value={this.state.teamName} 
                     name="teamName" 
-                    placeholder="First Name" 
+                    placeholder="First Name"
+                    required={this.state.required} 
                     onChange={this.handleChange} 
                 />
                 <br />
@@ -32,7 +34,8 @@ class Form extends Component {
                     type="text" 
                     value={this.state.whatsappNumber} 
                     name="whatsappNumber" 
-                    placeholder="Last Name" 
+                    placeholder="Last Name"
+                    required={this.state.required} 
                     onChange={this.handleChange} 
                 />
                 <button>Submit</button>

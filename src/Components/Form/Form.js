@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Form.css'
 
 class Form extends Component {
     constructor() {
@@ -33,34 +34,45 @@ class Form extends Component {
         if(this.state.condition){
             return(
                 <div className="trueCondition">
-                    
+                    <h1>Thank You for Registering</h1>
+                    <h2>We will keep sending you the updates !</h2>
                 </div>
             )
         }else{
             return(
-                <form onSubmit={this.handleSubmit} className="form"> 
-                    <label>"Team Name"</label>
-                    <input 
-                        type="text" 
-                        value={this.state.teamName} 
-                        name="teamName" 
-                        placeholder="India"
-                        required={this.state.required} 
-                        onChange={this.handleChange} 
-                    />
-                    <br />
-                    <label>whatsappNumber</label>
-                    <input 
-                        type="text" 
-                        value={this.state.whatsappNumber} 
-                        name="whatsappNumber" 
-                        placeholder="eg +91 9876543210"
-                        required={this.state.required} 
-                        onChange={this.handleChange} 
-                    />
-                    <button typr="submit">Submit</button>
-                    {/* {console.log(this.state.condition)} */}
-                </form>
+                <div className="main">
+                    <form onSubmit={this.handleSubmit} className="form">
+                        {/* <p>Fill out the details !</p>  */}
+                        <div className="one">
+                            <label>Team Name</label>
+                            <input 
+                                type="text" 
+                                value={this.state.teamName} 
+                                name="teamName" 
+                                placeholder="India"
+                                required={this.state.required} 
+                                onChange={this.handleChange} 
+                            />
+                            <br />
+                        </div>
+                        <div className="two">
+                            <label>Your WhatsApp Number</label>
+                            <input 
+                                type="text" 
+                                value={this.state.whatsappNumber} 
+                                name="whatsappNumber" 
+                                placeholder="eg +91 9876543210"
+                                required={this.state.required} 
+                                onChange={this.handleChange} 
+                            />
+                        </div>    
+                        <div className="three">
+                            <button typr="submit">Submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                
             )
         }
     }

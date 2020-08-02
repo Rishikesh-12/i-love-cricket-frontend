@@ -6,9 +6,12 @@ function App() {
   return (
     <div className="App">
         <Banner />
-        <TeamList />
-        <Form />
         <Developer />
+        <TeamList />
+
+        <h3>Fill this form with appropriate details !</h3>
+        <Form />
+
     </div>
   );
 }

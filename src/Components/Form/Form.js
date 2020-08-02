@@ -35,7 +35,7 @@ class Form extends Component {
             return(
                 <div className="trueCondition">
                     <h1>Thank You for Registering</h1>
-                    <h2>We will keep sending you the updates !</h2>
+                    <h2>We will keep sending you the score updates !</h2>
                 </div>
             )
         }else{

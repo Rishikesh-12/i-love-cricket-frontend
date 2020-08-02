@@ -1,4 +1,5 @@
 import React from 'react';
+import './Developer.css'
 
 const Developer = () => {
     return(

@@ -1,4 +1,6 @@
-.App > h3{
+.App > p{
     text-align: center;
-    color: rgb(21, 46, 156);
+    /* color: rgb(21, 46, 156); */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.246);
 }

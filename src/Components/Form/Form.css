@@ -52,6 +52,16 @@ input{
 }
 
 input:hover     {
-    background-color: rgba(255, 255, 255, 0.712) ;
+    background-color: rgba(255, 255, 255, 0.835) ;
     color: black;
+}
+
+.trueCondition{
+    text-align: center;
+    /* color: rgb(21, 46, 156); */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.603);
+    /* display: flex;
+    justify-content: center; */
+
 }

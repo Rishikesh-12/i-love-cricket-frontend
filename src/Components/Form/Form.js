@@ -13,13 +13,6 @@ class Form extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
-    // componentDidMount(){
-    //     fetch('http://localhost:8000/')
-    //       .then(response => response.json())
-    //       .then(console.log)
-    //   }
-    
     
     handleChange(event) {
         const {name, value} = event.target
@@ -33,6 +26,19 @@ class Form extends Component {
         this.setState({
             condition : true,
         })
+    }
+
+    onSubmitDetails = () => {
+        fetch('http://localhost:3000/submission',{
+            method:'post',
+            headers:{ 'Content-Type': 'application/json'},
+            body:JSON.stringify({
+                tName:this.state.teamName,
+                wNumber:this.state.whatsappNumber,                
+            })
+        })
+        .then(respond => respond.json())
+        .then(console.log)
     }
     
     render() {
@@ -74,7 +80,7 @@ class Form extends Component {
                             />
                         </div>    
                         <div className="three">
-                            <button typr="submit">Submit</button>
+                            <button onClick={this.onSubmitDetails} typr="submit">Submit</button>
                         </div>
                         
                     </form>

@@ -35,11 +35,20 @@ class Form extends Component {
                 headers:{ 'Content-Type': 'application/json'},
                 body:JSON.stringify({
                     tName:this.state.teamName,
-                    wNumber:this.state.whatsappNumber,                
+                    wNumber:this.state.whatsappNumber,
+                    joined = new Date().toString(),                
                 })
             })
-            .then(respond => respond.json())
-            .then(console.log)
+        }else{
+            fetch('https://powerful-garden-07163.herokuapp.com/submission',{
+                method:'post',
+                headers:{ 'Content-Type': 'application/json'},
+                body:JSON.stringify({
+                    tName:null,
+                    wNumber:null,
+                    joined:null,                
+                })
+            })            
         }
         
     }

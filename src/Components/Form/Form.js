@@ -29,16 +29,19 @@ class Form extends Component {
     }
 
     onSubmitDetails = () => {
-        fetch('http://powerful-garden-07163.herokuapp.com/submission',{
-            method:'post',
-            headers:{ 'Content-Type': 'application/json'},
-            body:JSON.stringify({
-                tName:this.state.teamName,
-                wNumber:this.state.whatsappNumber,                
+        if(this.state.teamName === null  || this.state.whatsappNumber === null){
+            fetch('http://powerful-garden-07163.herokuapp.com/submission',{
+                method:'post',
+                headers:{ 'Content-Type': 'application/json'},
+                body:JSON.stringify({
+                    tName:this.state.teamName,
+                    wNumber:this.state.whatsappNumber,                
+                })
             })
-        })
-        .then(respond => respond.json())
-        .then(console.log)
+            .then(respond => respond.json())
+            .then(console.log)
+        }
+        
     }
     
     render() {

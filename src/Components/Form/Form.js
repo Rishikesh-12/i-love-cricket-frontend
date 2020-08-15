@@ -23,13 +23,13 @@ class Form extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        this.sesubmission
+        this.setState({
             condition : true,
         })
     }
 
     onSubmitDetails = () => {
-        fetch('https://powerful-garden-07163.herokuapp.com/submission',{
+        fetch('http://powerful-garden-07163.herokuapp.com/submission',{
             method:'post',
             headers:{ 'Content-Type': 'application/json'},
             body:JSON.stringify({

@@ -36,7 +36,7 @@ class Form extends Component {
                 body:JSON.stringify({
                     tName:this.state.teamName,
                     wNumber:this.state.whatsappNumber,
-                    joined = new Date().toString(),                
+                    joined : new Date().toString(),                
                 })
             })
         }else{

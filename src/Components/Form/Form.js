@@ -29,7 +29,6 @@ class Form extends Component {
     }
 
     onSubmitDetails = () => {
-        if(this.state.teamName != ""  || this.state.whatsappNumber != ""){
             fetch('https://powerful-garden-07163.herokuapp.com/submission',{
                 method:'post',
                 headers:{ 'Content-Type': 'application/json'},
@@ -39,18 +38,6 @@ class Form extends Component {
                     joined : new Date().toString(),                
                 })
             })
-        // }else{
-        //     fetch('https://powerful-garden-07163.herokuapp.com/submission',{
-        //         method:'post',
-        //         headers:{ 'Content-Type': 'application/json'},
-        //         body:JSON.stringify({
-        //             tName:"",
-        //             wNumber:null,
-        //             joined:null,                
-        //         })
-        //     })            
-        }
-        
     }
     
     render() {

@@ -29,7 +29,7 @@ class Form extends Component {
     }
 
     onSubmitDetails = () => {
-        if(this.state.teamName !== null  || this.state.whatsappNumber !== null){
+        if(this.state.teamName !== ""  || this.state.whatsappNumber !== NaN){
             fetch('https://powerful-garden-07163.herokuapp.com/submission',{
                 method:'post',
                 headers:{ 'Content-Type': 'application/json'},

@@ -29,7 +29,7 @@ class Form extends Component {
     }
 
     onSubmitDetails = () => {
-        fetch('http://powerful-garden-07163.herokuapp.com/submission',{
+        fetch('https://powerful-garden-07163.herokuapp.com/submission',{
             method:'post',
             headers:{ 'Content-Type': 'application/json'},
             body:JSON.stringify({

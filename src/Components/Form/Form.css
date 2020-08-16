@@ -57,11 +57,13 @@ input:hover     {
 }
 
 .trueCondition{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    /* color: rgb(21, 46, 156); */
     color: white;
-    background-color: rgba(0, 0, 0, 0.603);
-    /* display: flex;
+    background-color: rgba(0, 0, 0, 0.486);
+    /*
     justify-content: center; */
 
 }

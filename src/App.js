@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import {Banner, TeamList, Form, Developer} from './Components'
+import {Banner, Steps, Form, Developer} from './Components'
 
 function App() {
   return (
     <div className="App">
         <Banner />
         <Developer />
-        <TeamList />
+        <Steps />
         <Form />
 
     </div>

@@ -73,7 +73,7 @@ class Form extends Component {
                                 type="text" 
                                 value={this.state.whatsappNumber} 
                                 name="whatsappNumber" 
-                                placeholder="eg +91 9876543210"
+                                placeholder="eg 9876543210"
                                 required={this.state.required} 
                                 onChange={this.handleChange} 
                             />

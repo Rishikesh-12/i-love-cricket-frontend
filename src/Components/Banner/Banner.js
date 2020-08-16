@@ -4,7 +4,7 @@ import './Banner.css'
 const Banner = () => {
     return(
         <div className="mainBanner">
-            <p> in development </p>
+            <p> 🇮🇳 Dedicated to Mahendra Singh Dhoni 🏏 </p>
         </div>
     )
 

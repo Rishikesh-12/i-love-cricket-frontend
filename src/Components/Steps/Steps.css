@@ -1,9 +1,13 @@
 .mainSteps{
+    /* text-align: left; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.486);
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: justify;
+    /* background-color: rgba(0, 0, 0, 0.486); */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     /* margin:2px; */

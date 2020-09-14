@@ -1,7 +1,7 @@
 body{
-    background-image: url(https://i.pinimg.com/originals/2b/32/9f/2b329fbb448f69b1de0405027dd4c51e.jpg);
+    background-image: url(./backdrop.gif);
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover; 
     background-color: rgb(247, 226, 160);
-}
+} 

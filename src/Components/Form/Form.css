@@ -1,6 +1,6 @@
 .main{
-    background-color: rgba(0, 0, 0, 0.486);
-    /* margin: 20px; */
+    /* background-color: rgba(0, 0, 0, 0.486); */
+    margin-top: 20px;
     /* border: 2px solid   black; */
     /* border-radius: 25px; */
     height: auto;
@@ -47,22 +47,23 @@ input{
     outline: none;
     border:none;
     border-bottom: 2px solid black;
-    background-color:rgba(0, 0, 0, 0.589);
-    color: white;
-}
-
-input:hover     {
-    background-color: rgba(255, 255, 255, 0.835) ;
+    /* background-color:rgba(0, 0, 0, 0.589); */
     color: black;
 }
 
+input:hover     {
+    /* background-color: rgba(255, 255, 255, 0.835) ; */
+    /* color: black; */
+}
+
 .trueCondition{
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.486);
+    /* background-color: rgba(0, 0, 0, 0.486); */
     /*
     justify-content: center; */
 

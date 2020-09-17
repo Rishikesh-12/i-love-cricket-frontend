@@ -2,10 +2,11 @@
     
     /* width: 100%; */
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.424);
+    background-color: rgba(0, 0, 0, 0.239);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: large;
+    font-family: 'Aclonica';font-size: 22px;
 }

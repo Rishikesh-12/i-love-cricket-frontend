@@ -4,7 +4,7 @@ import './Banner.css'
 const Banner = () => {
     return(
         <div className="mainBanner">
-            <p> ✨✨ IPL 2020 🎉🎉 </p>
+            {/* <p> <span role="img">✨✨</span> IPL 2020<span role="img"> 🎉🎉 </span></p> */}
         </div>
     )
 

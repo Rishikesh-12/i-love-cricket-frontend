@@ -1,7 +1,8 @@
 # I-love-cricket
 ----
-<img src="https://github.com/Rishikesh-12/i-love-cricket-frontend/blob/master/src/Components/extras/Get-Cricket-Scores-Update-1.png" alt="Homepage" width="160" height="100r">
-![alt text](https://github.com/Rishikesh-12/i-love-cricket-frontend/blob/master/src/Components/extras/Get-Cricket-Scores-Update-2.png "Homepage")
+<img src="https://github.com/Rishikesh-12/i-love-cricket-frontend/blob/master/src/Components/extras/Get-Cricket-Scores-Update-1.png" alt="Homepage" width="800" height="500">
+----
+<img src="https://github.com/Rishikesh-12/i-love-cricket-frontend/blob/master/src/Components/extras/Get-Cricket-Scores-Update-2.png" alt="Thanks" width="800" height="500">
 
 
 ----
